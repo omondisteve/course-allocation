@@ -1,0 +1,103 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        display: grid;
+        grid-template-columns: 250px 3fr;
+        grid-template-rows: 70px repeat(4, 1fr);
+        height: 100vh;
+    }
+    
+    .side-bar {
+        grid-column: 1/2;
+        grid-row: 1/6;
+        background-color: #1E252B;
+    }
+    
+    .side-bar-contents {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-top: 5rem;
+        padding-inline: 2rem;
+        row-gap: 2rem;
+    }
+    
+    .side-bar-header {
+        display: flex;
+        gap: 2rem;
+        margin-left: 2rem;
+    }
+    
+    .header {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        background-color: #3d3b3b;
+    }
+    
+    .main-content {
+        grid-column: 2/3;
+        grid-row: 2/6;
+        background: url('../assets/img/background-desk.jpeg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        padding: 3rem;
+        padding-top: 5rem;
+        gap: 2rem;
+    }
+    
+    .main-content a {
+        text-decoration: none;
+    }
+    
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    
+    .text {
+        color: #fff;
+    }
+    
+    .grid-content-1 {
+        background-color: rgb(17, 126, 71);
+    }
+    
+    .grid-content-2 {
+        background-color: skyblue;
+    }
+    
+    .grid-content-3 {
+        background-color: rgb(82, 155, 184);
+    }
+    
+    .grid-content-4 {
+        background-color: darkblue;
+    }
+    
+    .grid-content-5 {
+        background-color: rgb(17, 126, 71);
+    }
+    
+    .grid-content-6 {
+        background-color: khaki;
+    }
+    
+    .box {
+        padding: 2rem;
+        display: grid;
+        place-items: center;
+    }
+    
+    .success {
+        font-size: 20rem;
+        color: rgb(26, 211, 51);
+    }
+    
+    .side-bar a {
+        text-decoration: none;
+    }

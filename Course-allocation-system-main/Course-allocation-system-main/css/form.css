@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+form {
+    margin-top: 10%;
+}
+
+.flex-form {
+    display: flex;
+    gap: 5px;
+}
+
+.grid-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 15px;
+    row-gap: 15px;
+    position: relative;
+    left: -10px;
+    width: 200px;
+}
+
+
+/*---------------------------*/
+
+
+/*-- FORM STYLING--------*/
+
+
+/*----------------------*/
+
+.body-form {
+    background: rgb(135, 206, 235, 0.3);
+    font-family: 'Oswald', sans-serif;
+    min-height: 1000px;
+    overflow: auto;
+}
+
+.wrapper {
+    border: 3px solid rgb(54, 54, 216, 0.3);
+    height: 650px;
+    width: 750px;
+    justify-content: center;
+    row-gap: 2rem;
+    margin-block: 100px;
+    position: absolute;
+    left: 300px;
+    padding-inline: 10px;
+    padding-left: 50px;
+}
+
+.heading {
+    position: relative;
+    top: 30px;
+    left: 400px;
+    text-transform: uppercase;
+    width: 400px;
+    font-size: 2rem;
+}
+
+.person-dets {
+    position: absolute;
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+form>div {
+    margin-block: 10px;
+}
+
+.form-box {
+    width: 300px;
+    height: 40px;
+}
+
+form input {
+    border-radius: 5px;
+    border: none;
+    font-size: .975rem;
+}
+
+form select {
+    border-radius: 5px;
+    border: none;
+    background-color: #fff;
+}
+
+.b-date {
+    width: 600px;
+    height: 40px;
+}
+
+.form-letter {
+    font-size: .975rem;
+    color: #999797
+}
+
+#submit {
+    padding-block: 10px;
+    padding-inline: 15px;
+    font-size: .975rem;
+    color: #fff;
+    background: rgb(55, 124, 156);
+    border: none;
+    cursor: pointer;
+}

@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 250px 3fr;
+    grid-template-rows: 70px repeat(4, 1fr);
+    min-height: 100vh;
+}
+
+.side-bar {
+    grid-column: 1/2;
+    grid-row: 1/6;
+    background-color: #1E252B;
+    min-height: 100vh;
+}
+
+.side-bar a {
+    text-decoration: none;
+}
+
+.side-bar-contents {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 5rem;
+    padding-inline: 2rem;
+    row-gap: 2rem;
+}
+
+.side-bar-header {
+    display: flex;
+    gap: 2rem;
+    margin-left: 2rem;
+}
+
+.header {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background-color: #3d3b3b;
+}
+
+.main-content {
+    grid-column: 2/3;
+    grid-row: 2/6;
+    background: green;
+    background: url('../assets/img/background-desk.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 150px 150px 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    padding: 5rem;
+    gap: 2rem;
+}
+
+.grid--department {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 2rem;
+}
+
+.text {
+    color: #fff;
+    margin-top: 1.2rem;
+}
+
+.content-1 {
+    background: rgb(27, 196, 92);
+}
+
+.content-2 {
+    background: rgb(74, 168, 199);
+    grid-column: 2/4;
+}
+
+.content-3 {
+    background: red;
+}
+
+.content-4 {
+    background: rgb(173, 80, 80);
+    grid-column: 1/-3;
+}
+
+.content-5 {
+    background: blue;
+}
+
+.content-6 {
+    background: #b38d12;
+    grid-column: 4/5;
+    grid-row: 2/4;
+}
+
+.content-7 {
+    background: rgb(74, 168, 199);
+}
+
+.content-8 {
+    background: teal;
+    grid-column: 2/4;
+}
+
+.box {
+    padding: 1rem;
+    display: grid;
+    place-items: center;
+}
+
+.content-6 .text {
+    position: relative;
+    top: -4.5rem;
+}
+
+.success {
+    color: rgb(37, 168, 37);
+    font-size: 1.5rem;
+}
+
+.main-content a {
+    text-decoration: none;
+}
+
+.head {
+    align-self: start;
+    text-transform: uppercase;
+}
+
+form {
+    margin-top: 50px;
+}
+
+form>input {
+    margin-block: 10px;
+    width: 400px;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+form>button {
+    padding: 10px;
+    font-size: 1.15rem;
+    background: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+form>select {
+    margin-block: 10px;
+    width: 400px;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+.a-tag {
+    text-decoration: none;
+    color: white;
+}
